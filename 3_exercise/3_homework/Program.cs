@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace _3_homework
 {
@@ -16,25 +18,65 @@ namespace _3_homework
 
             Array.Sort(arr);
 
-            int progressionLength = 1;
-            int a1 = arr[0];
-            int d = arr[1] - arr[0];
+            List<int> resultSequence = new List<int>();
+            List<int> currentSequence = new List<int>();
 
+            int currentDif;
+            int nextNum;
+            bool found = true;
 
-            int currentElD = d;
-            int currentMemberNum = 1;
-
-            for (int i = 1; i < arr.Length; i++)
-            {
-                int nextNum = a1 + currentMemberNum * d;
-
-                for (int k = 0; k < arr.Length; k++)
+            for (int i = 0; i < arr.Length - 1; i++)
+            {      
+                for (int k = 1; k < arr.Length; k++)
                 {
-                    // if
+                    currentDif = arr[k] - arr[i];
+                    currentSequence.Add(arr[i]);
+                    currentSequence.Add(arr[k]);
+
+                    nextNum = arr[k] + currentDif;
+
+                    while(found)
+                    {
+                        found = false;
+
+                        for (int j = k + 1; j < arr.Length; j++)
+                        {
+                            if(arr[j] == nextNum)
+                            {
+                                currentSequence.Add(arr[j]);
+                                nextNum = arr[j] + currentDif;
+                                found = true;
+                                continue;
+                            }
+                        }
+                    }
+
+                    if(currentSequence.Count > resultSequence.Count)
+                    {
+                        resultSequence = new List<int>(currentSequence);
+                    };
+
+                    currentSequence.Clear();
+
                 }
 
             }
 
+            StringBuilder result = new StringBuilder();
+            result.Append("Result: {");
+
+            for (int i = 0; i < resultSequence.Count; i++)
+            {
+                result.Append(resultSequence[i]);
+                if(i != (resultSequence.Count - 1))
+                {
+                    result.Append(",");
+                }
+            }
+
+            result.Append("}");
+
+            Console.WriteLine(result.ToString());
         }
     }
 }
