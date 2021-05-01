@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_exam_preparation", "1_exam_preparation\1_exam_preparation.csproj", "{D35E0A73-7B96-4AA3-93FC-6BC7CFDD152D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1_exam_preparation", "1_exam_preparation\1_exam_preparation.csproj", "{D35E0A73-7B96-4AA3-93FC-6BC7CFDD152D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_task", "2_task\2_task.csproj", "{358CB853-B68E-429B-9D6D-D6A0E0AA4AEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_task", "2_task\2_task.csproj", "{358CB853-B68E-429B-9D6D-D6A0E0AA4AEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_task", "3_task\3_task.csproj", "{CBCF279E-E573-40D1-838D-99E9B9244BEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tsvetelina_18118033", "tsvetelina_18118033\tsvetelina_18118033.csproj", "{A0FB1A16-CCC1-4B3E-8A58-8E16117E0F47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{358CB853-B68E-429B-9D6D-D6A0E0AA4AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{358CB853-B68E-429B-9D6D-D6A0E0AA4AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{358CB853-B68E-429B-9D6D-D6A0E0AA4AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCF279E-E573-40D1-838D-99E9B9244BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCF279E-E573-40D1-838D-99E9B9244BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCF279E-E573-40D1-838D-99E9B9244BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCF279E-E573-40D1-838D-99E9B9244BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FB1A16-CCC1-4B3E-8A58-8E16117E0F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FB1A16-CCC1-4B3E-8A58-8E16117E0F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FB1A16-CCC1-4B3E-8A58-8E16117E0F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FB1A16-CCC1-4B3E-8A58-8E16117E0F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
